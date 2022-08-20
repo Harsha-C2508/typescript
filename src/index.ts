@@ -35,3 +35,16 @@ function division(x:number,y:number){
     return x/y
 }
 console.log(division(8,4))
+
+// create a function that takes a name and prints it without returning anything
+
+type person={
+    name: string
+}
+let obj1: person={
+    name:'masai'
+}
+
+const details=({name}:person):void=>{
+        console.log(`${name}`)
+}
