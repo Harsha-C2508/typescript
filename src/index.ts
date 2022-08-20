@@ -48,3 +48,75 @@ let obj1: person={
 const details=({name}:person):void=>{
         console.log(`${name}`)
 }
+
+// create an interface for an object
+
+interface details{
+    title: string,
+    status: boolean,
+    id: number
+}
+
+// create a function getName
+
+interface details1{
+    firstName: string,
+    lastName: string,
+    fullName?: string
+}
+
+let obj2:details1={
+    firstName: 'Harsha',
+    lastName:"C"
+}
+
+const person=({firstName,lastName,fullName}:details1)=>{
+  fullName=(`${firstName}+${lastName}`)
+     console.log(fullName);
+}
+
+// create an interface Address
+
+interface Address{
+houseNumber: number,
+street: any,
+city: string,
+state: string,
+postalCode: number,
+country:string
+}
+
+let obj3:Address={
+    houseNumber: 194,
+    street: '2nd street nagpur' ,
+    city: 'Nagpur',
+    state: 'Tamil nadu',
+    postalCode: 679330,
+    country: 'India'
+}
+
+// create a PersonDetails interface
+
+interface PersonDetails{
+Prefix ?: string,
+phones : number[],
+addresses: string[],
+email ?: any,
+firstname: string,
+lastname: string,
+middlename ?: string,
+}
+
+let obj4:PersonDetails={
+Prefix :'down',
+phones :[9045673622,90487224613],
+addresses:['cheppli(h)','karlikode','karulai'],
+email : 'harshac2508@gmail.com',
+firstname:'Suresh',
+lastname:'C',
+middlename:'Babu'
+}
+
+const phoneBook=({firstname,lastname,middlename,phones}:PersonDetails)=>{
+    var wrap = (`${firstname}+${" "}+${middlename}+${" "}+${lastname}+${"="}+${phones}`)
+}
