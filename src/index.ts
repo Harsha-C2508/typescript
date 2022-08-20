@@ -26,21 +26,12 @@ enum panel{
 }
 
 // create a function that takes 2 arguments, x, y both numbers it should return the product of the 2 numbers
-interface multi{
-    x: number,
-    y: number
-}
-const product=(props:multi)=>{
-    const {x,y} = props
+function product(x:number,y:number){
     return x*y
 }
-
+console.log(product(2,3))
 // create a function that takes 2 arguments, x ,y both numbers, it should divide output ( x / y )
-interface multi{
-    x: number,
-    y: number
-}
-const Divi=(props:multi)=>{
-    const {x,y} = props
+function division(x:number,y:number){
     return x/y
 }
+console.log(division(8,4))
